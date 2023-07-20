@@ -1,2 +1,11 @@
+# Python
 env
+
+# Ultralytics default model download
 yolov8n.pt
+
+# Repo folder tree
+datasets/*
+!datasets/.gitkeep
+models/*
+!models/.gitkeep
