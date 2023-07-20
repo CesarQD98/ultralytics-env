@@ -6,7 +6,7 @@ if [ ! -d "venv" ]; then
 fi
 
 # Activate virtual environment
-source ./env/Scripts/activate
+source env/Scripts/activate
 
 # Upgrade pip
 python -m pip install --upgrade pip
