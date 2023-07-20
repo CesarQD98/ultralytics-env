@@ -5,6 +5,7 @@ from typing import Tuple
 
 from ultralytics import YOLO
 
+# TODO: Delete unused constants
 BASE_MODEL = r"models/yolov8m-seg.pt"
 CONF_FILE_PATH = r"./datasets/254437_CHUTE_3/data_config.yaml"
 
@@ -58,6 +59,8 @@ def main():
 
     model = YOLO(model_file_path)
     model.train(data=dataset_folder_path, epochs=100)
+
+    # TODO: Track new folder created by Ultralytics and get the "best.pt" file and rename it to "output_model_name" value.
 
     # model = YOLO(BASE_MODEL)
     # model.train(data=CONF_FILE_PATH, epochs=100)
